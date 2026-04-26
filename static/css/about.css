@@ -1,0 +1,56 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1d2b64, #f8cdda);
+    background-attachment: fixed;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+.navbar {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #ddd;
+    font-size: 18px;
+}
+
+.section-box {
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.section-box:hover {
+    transform: translateY(-5px);
+}
+
+.mini-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.mini-card:hover {
+    transform: scale(1.05);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Text */
+p {
+    color: #ddd;
+    line-height: 1.6;
+}
