@@ -1,0 +1,171 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: linear-gradient(135deg, #1d2b64, #f8cdda);
+    background-attachment: fixed;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+.navbar {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+.main-container {
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 40px;
+    margin-top: 30px;
+}
+
+h1 {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 10px;
+    padding: 12px;
+    border: none;
+}
+
+.btn-custom {
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: 600;
+}
+
+.btn-speech {
+    background: #0dcaf0;
+    border: none;
+}
+
+.btn-predict {
+    background: #ff4b2b;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+}
+
+.result-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.toggle-button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+    border: none;
+    transition: 0.3s;
+}
+
+.toggle-button:hover {
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+.modal-content {
+    border-radius: 15px;
+    color: black;
+}
+
+.modal-header {
+    background: #111;
+    color: white;
+}
+
+#transcription {
+    margin-top: 10px;
+    font-style: italic;
+    color: #ddd;
+}
+
+.select2-container--default .select2-selection--multiple {
+    background-color: #222;
+    border: 1px solid #555;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.select2-container--default .select2-selection__choice {
+    background-color: #0dcaf0;
+    border: none;
+    color: black;
+    padding: 3px 8px;
+    border-radius: 10px;
+}
+
+.select2-dropdown {
+    background-color: #222;
+    color: white;
+}
+
+.select2-results__option {
+    color: white;
+}
+
+.select2-search__field {
+    color: white !important;
+}
+
+/* Ensure the selection box is tall enough and visible */
+.select2-container--default .select2-selection--multiple {
+    min-height: 45px;
+    background-color: #222 !important;
+}
+
+/* Fix for the search input text color */
+.select2-container--default .select2-search--inline .select2-search__field {
+    color: white !important;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Ensure dropdown is above other elements */
+.select2-dropdown {
+    z-index: 9999;
+    background-color: #333 !important;
+    border: 1px solid #555 !important;
+}
+
+#selected-symptoms-badges {
+    min-height: 20px;
+    margin-bottom: 15px;
+}
+
+#selected-symptoms-badges .badge {
+    font-size: 14px;
+    font-weight: 500;
+    transition: all 0.2s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#selected-symptoms-badges .badge:hover {
+    background-color: #ff4b2b !important;
+    color: white !important;
+}
+
+.symptom-box {
+    max-height: 250px;
+    overflow-y: auto;
+    background: #222;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.form-check-label {
+    color: white;
+}
+
+.badge-container span {
+    font-size: 14px;
+}
