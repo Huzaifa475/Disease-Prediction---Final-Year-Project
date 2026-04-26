@@ -1,0 +1,72 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1d2b64, #f8cdda);
+    background-attachment: fixed;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+/* Header */
+.blog-header h1 {
+    font-weight: bold;
+}
+
+.subtitle {
+    color: #ddd;
+}
+
+/* Blog Box */
+.blog-box {
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    line-height: 1.7;
+}
+
+/* Steps */
+.steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.step-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 12px;
+    transition: 0.3s;
+}
+
+.step-box:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Feature List */
+.feature-list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.feature-list li {
+    margin-bottom: 10px;
+    color: #ddd;
+}
+
+/* Text */
+p {
+    color: #ddd;
+}
