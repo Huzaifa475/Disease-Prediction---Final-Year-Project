@@ -1,0 +1,67 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1d2b64, #f8cdda);
+    background-attachment: fixed;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.logo img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+}
+
+/* Profile */
+.profile-box {
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.profile-img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+/* Subtitle */
+.subtitle {
+    color: #ddd;
+}
+
+/* Section */
+.section-box {
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(12px);
+    border-radius: 20px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.section-box:hover {
+    transform: translateY(-5px);
+}
+
+/* Mini cards (skills) */
+.mini-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.mini-card:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+/* Text */
+p {
+    color: #ddd;
+}
