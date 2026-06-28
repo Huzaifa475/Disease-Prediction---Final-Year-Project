@@ -80,9 +80,6 @@ def get_predicted_value(patient_symptoms):
 # creating routes========================================
 
 
-# @app.route("/")
-# def index():
-#     return render_template("index.html")
 @app.route("/")
 def index():
     return render_template("home.html", symptoms_dict=symptoms_dict)
@@ -91,15 +88,11 @@ def index():
 @app.route('/predict', methods=['GET', 'POST'])
 def predict():
     if request.method == 'POST':
-        # symptoms = request.form.get('symptoms')
         symptoms = request.form.getlist('symptoms')
-        # mysysms = request.form.get('mysysms')
-        # print(mysysms)
         print(symptoms)
-        # if symptoms =="Symptoms":
         if not symptoms:
             message = "Please select symptoms"
-            return render_template('index.html', message=message, symptoms_dict=symptoms_dict)
+            return render_template('predict.html', message=message, symptoms_dict=symptoms_dict)
 
         user_symptoms = [s.strip().replace(" ", "_") for s in symptoms]
 
@@ -112,7 +105,7 @@ def predict():
             for i in precs[0]:
                 my_precautions.append(i)
 
-        return render_template('index.html',
+        return render_template('predict.html',
             predicted_disease=predicted_disease,
             dis_des=dis_des,
             my_precautions=my_precautions,
@@ -121,19 +114,12 @@ def predict():
             workout=wrkout,
             symptoms_dict=symptoms_dict
 )
-    # return render_template('index.html')
     return render_template("predict.html", symptoms_dict=symptoms_dict)
-
-
 
 # about view funtion and path
 @app.route('/about')
 def about():
     return render_template("about.html")
-# contact view funtion and path
-@app.route('/contact')
-def contact():
-    return render_template("contact.html")
 
 # developer view funtion and path
 @app.route('/developer')
